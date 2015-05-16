@@ -142,3 +142,17 @@ bindsym $mod+m mode "layout"
 bar {
         status_command i3status
 }
+
+# System functions
+set $sysmode "(l) lock, (s) suspend, (h) hibernate, (r) reboot, (Shift+s) shutdown"
+mode $sysmode {
+  bindsym l exec --no-startup-id ~/.i3/bin/i3exit lock, mode "default"
+  bindsym s exec --no-startup-id ~/.i3/bin/i3exit suspend, mode "default"
+  bindsym h exec --no-startup-id ~/.i3/bin/i3exit hibernate, mode "default"
+  bindsym r exec --no-startup-id ~/.i3/bin/i3exit reboot, mode "default"
+  bindsym Shift+s exec --no-startup-id ~/.i3/bin/i3exit shutdown, mode "default"
+
+  bindsym Escape mode "default"
+}
+
+bindsym $mod+Escape mode $sysmode
