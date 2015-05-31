@@ -4,7 +4,7 @@
 ### Instalation
 Just clone this repository into ~/.i3 folder.
 ```
-git clone git@github.com:alexandremello/i3-cofig.git ~/.i3
+git clone https://github.com/alexandremello/i3-cofig.git ~/.i3
 ```
 
 ### Some personalizations:
