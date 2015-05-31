@@ -1,0 +1,3 @@
+setxkbmap -layout "us,br" -variant "alt-intl," -option "grp:shift_toggle"
+
+xmodmap ~/.xmodmap
